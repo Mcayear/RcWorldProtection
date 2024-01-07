@@ -1,0 +1,8 @@
+name: RcWorldProtection
+version: 1.0.0
+api: 1.0.0
+author: RuoChen
+main: RcWorldProtection.Main
+commands:
+  wp:
+    description: 世界保护插件

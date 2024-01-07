@@ -1,0 +1,39 @@
+破坏: false
+反破坏规则方块: []
+放置: false
+反放置规则方块: []
+交互: false
+反交互规则物品: []
+反交互规则方块: []
+移动: false
+传送: false
+上床: false
+拾起: false
+丢弃: false
+飞行: false
+实体爆炸: false
+实体爆炸破坏: false
+液体流动: false
+方块自然生成: false
+植物生长: false
+树叶凋零: false
+玩家受伤: false
+允许PVP: false
+经验熔炉: false
+死亡掉落物品: false
+死亡掉落经验: false
+耕地保护: false
+冻结告示牌: true
+展示框保护: true
+箱子: true
+钓鱼: true
+燃烧: true
+物理触碰: false #点击门，活板门，按钮等
+时间变化: true
+天气变化: true
+世界虚空: "10:1" #1拉回出生点 2kill 3拉回指定位置
+世界边界: []
+  #举例 代表x为10-20，z为10-20
+  #- 10:20
+  #- 10:20
+
