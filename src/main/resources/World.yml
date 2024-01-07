@@ -26,6 +26,9 @@
 冻结告示牌: true
 展示框保护: true
 箱子: true
+末影箱: true
+容器: true
+书架: false
 钓鱼: true
 燃烧: true
 物理触碰: false #点击门，活板门，按钮等

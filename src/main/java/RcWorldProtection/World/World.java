@@ -77,6 +77,8 @@ public class World {
 
     private boolean canContainer;
 
+    private boolean canBook;
+
     private boolean canFish;
 
     private boolean canClick;
@@ -131,6 +133,7 @@ public class World {
             world.setCanChest(config.getBoolean("箱子"));
             world.setCanEnderChest(config.getBoolean("末影箱"));
             world.setCanContainer(config.getBoolean("容器"));
+            world.setCanBook(config.getBoolean("书架"));
             world.setCanFish(config.getBoolean("钓鱼"));
             world.setCanBurn(config.getBoolean("燃烧"));
             world.setCanClick(config.getBoolean("物理触碰"));
@@ -226,6 +229,7 @@ public class World {
         form.addElement(new ElementToggle("箱子",this.isCanChest()));
         form.addElement(new ElementToggle("末影箱",this.isCanEnderChest()));
         form.addElement(new ElementToggle("容器",this.isCanContainer()));
+        form.addElement(new ElementToggle("书架",this.isCanBook()));
         form.addElement(new ElementToggle("钓鱼",this.isCanFish()));
         form.addElement(new ElementToggle("燃烧",this.isCanBurn()));
         form.addElement(new ElementToggle("物理触碰",this.isCanClick()));

@@ -280,6 +280,10 @@ public class Events implements Listener {
                 event.setCancelled();
                 Handle.sendMessage(player,"title","容器");
             }
+            if(!world.isCanBook() && block.getId() == 781 && !Handle.isWhiteList(player.getName())){
+                event.setCancelled();
+                Handle.sendMessage(player,"title","书架");
+            }
             if(world.isCanFrame() && !Handle.isWhiteList(player.getName()) && (block.getId() == 389 || block.getId() == -339)){
                 event.setCancelled();
                 Handle.sendMessage(player,"title","展示框保护");
@@ -462,11 +466,12 @@ public class Events implements Listener {
                 config.set("箱子", response6.getToggleResponse(23));
                 config.set("末影箱", response6.getToggleResponse(24));
                 config.set("容器", response6.getToggleResponse(25));
-                config.set("钓鱼", response6.getToggleResponse(26));
-                config.set("燃烧", response6.getToggleResponse(27));
-                config.set("物理触碰", response6.getToggleResponse(28));
-                config.set("时间变化", response6.getToggleResponse(29));
-                config.set("天气变化", response6.getToggleResponse(30));
+                config.set("书架", response6.getToggleResponse(26));
+                config.set("钓鱼", response6.getToggleResponse(27));
+                config.set("燃烧", response6.getToggleResponse(28));
+                config.set("物理触碰", response6.getToggleResponse(29));
+                config.set("时间变化", response6.getToggleResponse(30));
+                config.set("天气变化", response6.getToggleResponse(31));
                 config.save();
                 WorldForm.showForm5(player);
             }
