@@ -295,6 +295,16 @@ public class Events implements Listener {
                     event.setCancelled();
                 }
             }
+            if(item instanceof ItemShovelWood || item instanceof ItemShovelDiamond || item instanceof ItemShovelGold || item instanceof ItemShovelIron || item instanceof ItemShovelNetherite || item instanceof ItemShovelStone){
+                if (!world.isCanBreak() && !Handle.isWhiteList(player.getName())) {
+                    event.setCancelled();
+                }
+            }
+            if(item instanceof ItemHoeWood || item instanceof ItemHoeDiamond || item instanceof ItemHoeGold || item instanceof ItemHoeIron || item instanceof ItemHoeNetherite || item instanceof ItemHoeStone){
+                if (!world.isCanBreak() && !Handle.isWhiteList(player.getName())) {
+                    event.setCancelled();
+                }
+            }
             if(item instanceof ItemFishingRod){
                 if (!world.isCanFish() && !Handle.isWhiteList(player.getName())) {
                     event.setCancelled();
